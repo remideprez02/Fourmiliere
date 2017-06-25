@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63868D74-4C74-4B10-AF13-EE8207D88686}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LibMetier</RootNamespace>
+    <AssemblyName>LibMetier</AssemblyName>
+    <DefaultLanguage>fr-FR</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fabriques\FabriqueFourmiliere.cs" />
+    <Compile Include="GestionEnvironnement\BoutDeTerrain.cs" />
+    <Compile Include="GestionEnvironnement\Chemin.cs" />
+    <Compile Include="GestionEnvironnement\Fourmiliere.cs" />
+    <Compile Include="GestionObjets\Nourriture.cs" />
+    <Compile Include="GestionObjets\Oeuf.cs" />
+    <Compile Include="GestionObjets\Pheromone.cs" />
+    <Compile Include="GestionPersonnages\Combatante.cs" />
+    <Compile Include="GestionPersonnages\Cueilleuse.cs" />
+    <Compile Include="GestionPersonnages\Fourmi.cs" />
+    <Compile Include="GestionPersonnages\Reine.cs" />
+    <Compile Include="GestionPersonnages\IStrategie.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\Meteo.cs" />
+    <Compile Include="Observateurs\ObservateurCueilleuse.cs" />
+    <Compile Include="Observateurs\ObservateurCombatante.cs" />
+    <Compile Include="Observateurs\ObservateurReine.cs" />
+    <Compile Include="Observateurs\IObservateur.cs" />
+    <Compile Include="Observateurs\ObservateurFourmi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stratégies\StrategieArreterPondre.cs" />
+    <Compile Include="Stratégies\StrategieDefendreColonie.cs" />
+    <Compile Include="Stratégies\StrategieChercherNourriture.cs" />
+    <Compile Include="Stratégies\StrategieExplorer.cs" />
+    <Compile Include="Stratégies\StrategiePondre.cs" />
+    <Compile Include="Stratégies\StrategieRentrerColonie.cs" />
+    <Compile Include="Stratégies\StrategieSortirColonie.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LibAbstraite\LibAbstraite.csproj">
+      <Project>{7c33db52-52cc-47d2-8b14-445aaa3c7e7a}</Project>
+      <Name>LibAbstraite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

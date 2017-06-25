@@ -1,0 +1,11 @@
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibMetier\bin\Debug\LibMetier.dll
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibMetier\bin\Debug\LibMetier.pdb
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibMetier\obj\Debug\LibMetier.dll
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibMetier\obj\Debug\LibMetier.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\bin\Debug\LibMetier.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\bin\Debug\LibMetier.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\bin\Debug\LibAbstraite.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\bin\Debug\LibAbstraite.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\obj\Debug\LibMetier.csprojResolveAssemblyReference.cache
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\obj\Debug\LibMetier.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibMetier\obj\Debug\LibMetier.pdb

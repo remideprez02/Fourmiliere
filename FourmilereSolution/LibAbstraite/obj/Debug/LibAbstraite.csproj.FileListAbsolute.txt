@@ -1,0 +1,8 @@
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibAbstraite\bin\Debug\LibAbstraite.dll
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibAbstraite\bin\Debug\LibAbstraite.pdb
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibAbstraite\obj\Debug\LibAbstraite.dll
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\LibAbstraite\obj\Debug\LibAbstraite.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibAbstraite\bin\Debug\LibAbstraite.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibAbstraite\bin\Debug\LibAbstraite.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibAbstraite\obj\Debug\LibAbstraite.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\LibAbstraite\obj\Debug\LibAbstraite.pdb

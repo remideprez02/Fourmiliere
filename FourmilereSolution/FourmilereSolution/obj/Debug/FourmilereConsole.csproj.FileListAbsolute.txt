@@ -1,0 +1,16 @@
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe.config
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.pdb
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereConsole.csprojResolveAssemblyReference.cache
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.exe
+c:\users\deprezremi\documents\visual studio 2017\Projects\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe.config
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\LibAbstraite.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\LibMetier.dll
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\LibAbstraite.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin\Debug\LibMetier.pdb
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereConsole.csprojResolveAssemblyReference.cache
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.exe
+C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.pdb
