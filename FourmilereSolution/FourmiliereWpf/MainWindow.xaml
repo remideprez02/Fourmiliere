@@ -3,18 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:View="clr-namespace:FourmiliereWpf.View.UserControls"
-        xmlns:view="clr-namespace:FourmiliereWpf.View"
+        xmlns:view="clr-namespace:FourmiliereWpf.View.UserControls"
         xmlns:details="clr-namespace:FourmiliereWpf.View.UserControls.Details"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="350"
         Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition  Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="1.5*" />
         </Grid.ColumnDefinitions>
+        <Grid Name="PLateau"
+              ShowGridLines="True"
+              Grid.Column="1"
+              Grid.RowSpan="2"></Grid>
         <TabControl x:Name="TabControlView"
                     SelectionChanged="TabControlView_OnSelectionChanged"
                     Grid.Column="0">
@@ -23,26 +30,30 @@
                          Grid.Column="0" />
             </TabItem>
             <TabItem x:Name="TabItemCombatante">
-                <View:CombatanteView x:Name="CombatanteView"
+                <view:CombatanteView x:Name="CombatanteView"
                                  Grid.Column="0" />
             </TabItem>
             <TabItem x:Name="TabItemCueilleuse">
                 <view:CueilleuseView x:Name="CueilleuseView"
                                  Grid.Column="0" />
             </TabItem>
-            <details:DetailFourmiView x:Name="DetailFourmiView"
-                         Grid.Column="1"
-                         VerticalAlignment="Center">
-            </details:DetailFourmiView>
-            <details:DetailCombatanteView x:Name="DetailCombatanteView"
-                                   Grid.Column="1"
-                                   VerticalAlignment="Center">
-            </details:DetailCombatanteView>
-            <details:DetailCueilleuseView x:Name="DetailCueilleuseView"
-                                   Grid.Column="1"
-                                   VerticalAlignment="Center">
-            </details:DetailCueilleuseView>
+            
         </TabControl>
+        <details:DetailFourmiView x:Name="DetailFourmiView"
+                                  Grid.Column="0"
+                                  Grid.Row="2"
+                                  VerticalAlignment="Center">
+        </details:DetailFourmiView>
+        <details:DetailCombatanteView x:Name="DetailCombatanteView"
+                                      Grid.Column="0"
+                                      Grid.Row="2"
+                                      VerticalAlignment="Center">
+        </details:DetailCombatanteView>
+        <details:DetailCueilleuseView x:Name="DetailCueilleuseView"
+                                      Grid.Column="0"
+                                      Grid.Row="2"
+                                      VerticalAlignment="Center">
+        </details:DetailCueilleuseView>
     </Grid>
 </Window>
 

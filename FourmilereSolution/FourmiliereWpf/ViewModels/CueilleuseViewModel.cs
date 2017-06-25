@@ -30,6 +30,15 @@ namespace FourmiliereWpf.ViewModels
             }
         }
 
+        public int Num
+        {
+            get => this._cueilleuse.Num;
+            set
+            {
+                this._cueilleuse.Num = value;
+                OnPropertyChanged("Num");
+            }
+        }
         public Cueilleuse Cueilleuse => this._cueilleuse;
 
         public CueilleuseViewModel(Cueilleuse cueilleuse)

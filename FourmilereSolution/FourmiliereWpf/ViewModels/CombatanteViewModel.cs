@@ -29,6 +29,15 @@ namespace FourmiliereWpf.ViewModels
                 OnPropertyChanged("Vie");
             }
         }
+        public int Num
+        {
+            get => this._combatante.Num;
+            set
+            {
+                this._combatante.Num = value;
+                OnPropertyChanged("Num");
+            }
+        }
 
         public Combatante Combatante => this._combatante;
 

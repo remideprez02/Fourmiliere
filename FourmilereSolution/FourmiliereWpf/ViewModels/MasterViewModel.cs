@@ -61,36 +61,41 @@ namespace FourmiliereWpf.ViewModels
                     var fourmi = (Fourmi)personnageAbstrait;
                     this._fourmis.Add(new FourmiViewModel(fourmi));
 
-                    this._collectionFourmisView = CollectionViewSource.GetDefaultView(this._fourmis);
-                    if (this._collectionFourmisView == null)
-                        throw new NullReferenceException("collectionViewFourmi");
-
-                    this._collectionFourmisView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedFourmi);
                 }
                 if (personnageAbstrait.Nom == "combatante")
                 {
                     var combatante = (Combatante)personnageAbstrait;
                     this._combatantes.Add(new CombatanteViewModel(combatante));
 
-                    this._collectionCombatantesView = CollectionViewSource.GetDefaultView(this._combatantes);
-                    if (this._collectionCombatantesView == null)
-                        throw new NullReferenceException("collectionViewCombatante");
-
-                    this._collectionCombatantesView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedCombatante);
+                    
                 }
                 if (personnageAbstrait.Nom == "cueilleuse")
                 {
                     var cueilleuse = (Cueilleuse)personnageAbstrait;
                     this._cueilleuses.Add(new CueilleuseViewModel(cueilleuse));
 
-                    this._collectionCueilleusesView = CollectionViewSource.GetDefaultView(this._cueilleuses);
-                    if (this._collectionCueilleusesView == null)
-                        throw new NullReferenceException("collectionViewCueilleuse");
-
-                    this._collectionCueilleusesView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedCueilleuse);
+                    
                 }
 
-            }    
+            }
+            this._collectionFourmisView = CollectionViewSource.GetDefaultView(this._fourmis);
+            if (this._collectionFourmisView == null)
+                throw new NullReferenceException("collectionViewFourmi");
+
+            this._collectionFourmisView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedFourmi);
+
+            this._collectionCueilleusesView = CollectionViewSource.GetDefaultView(this._cueilleuses);
+            if (this._collectionCueilleusesView == null)
+                throw new NullReferenceException("collectionViewCueilleuse");
+
+            this._collectionCueilleusesView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedCueilleuse);
+
+            this._collectionCombatantesView = CollectionViewSource.GetDefaultView(this._combatantes);
+            if (this._collectionCombatantesView == null)
+                throw new NullReferenceException("collectionViewCombatante");
+
+            this._collectionCombatantesView.CurrentChanged += new EventHandler(this.OnCollectionViewCurrentChangedCombatante);
+
         }
 
         #region Propriétés
@@ -275,6 +280,7 @@ namespace FourmiliereWpf.ViewModels
         {
             var combatante = (Combatante)_fabriqueFourmiliere.CreerPersonnage("combatante");
             this._fourmiliere.AjoutePersonnage(combatante);
+            
 
             this._combatantes.Add(new CombatanteViewModel(combatante));
         }
@@ -312,7 +318,7 @@ namespace FourmiliereWpf.ViewModels
 
         private void OnCollectionViewCurrentChangedCombatante(object sender, EventArgs e)
         {
-            OnPropertyChanged("SelectedFourmi");
+            OnPropertyChanged("SelectedCombatante");
         }
 
         #endregion

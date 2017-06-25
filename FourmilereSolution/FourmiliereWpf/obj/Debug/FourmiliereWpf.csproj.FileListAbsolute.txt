@@ -13,3 +13,15 @@ C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Deb
 C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf_MarkupCompile.cache
 C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf_MarkupCompile.lref
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\bin\Debug\FourmiliereWpf.exe.config
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\bin\Debug\FourmiliereWpf.exe
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\bin\Debug\FourmiliereWpf.pdb
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\MainWindow.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\CombatanteView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\CueilleuseView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\FourmiView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.g.resources
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.Properties.Resources.resources
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.csproj.GenerateResource.Cache
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.exe
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.pdb
