@@ -21,41 +21,15 @@ namespace FourmiliereWpf.ViewModels
             }
         }
 
-        //public bool IsMale
-        //{
-        //    get
-        //    {
-        //        return this.person.Gender == Gender.Male;
-        //    }
-        //    set
-        //    {
-        //        if (value)
-        //            this.person.Gender = Gender.Male;
-        //        else
-        //            this.person.Gender = Gender.Female;
-
-        //        OnPropertyChanged("IsMale");
-        //        OnPropertyChanged("IsFemale");
-        //    }
-        //}
-
-        //public bool IsFemale
-        //{
-        //    get
-        //    {
-        //        return this.person.Gender == Gender.Female;
-        //    }
-        //    set
-        //    {
-        //        if (value)
-        //            this.person.Gender = Gender.Female;
-        //        else
-        //            this.person.Gender = Gender.Male;
-
-        //        OnPropertyChanged("IsFemale");
-        //        OnPropertyChanged("IsMale");
-        //    }
-        //}
+        public int Num
+        {
+            get => this._fourmi.Num;
+            set
+            {
+                this._fourmi.Num = value;
+                OnPropertyChanged("Num");
+            }
+        }
 
         public int Vie
         {

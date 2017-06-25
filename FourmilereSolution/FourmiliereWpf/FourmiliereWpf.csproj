@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -90,16 +92,30 @@
     <Compile Include="ModelsConcrets\Stratégie\StrategieRentrerColonie.cs" />
     <Compile Include="ModelsConcrets\Stratégie\StrategieSortirColonie.cs" />
     <Compile Include="ViewModels\AProposViewModel.cs" />
+    <Compile Include="ViewModels\CombatanteViewModel.cs" />
+    <Compile Include="ViewModels\CueilleuseViewModel.cs" />
     <Compile Include="ViewModels\FourmiliereViewModel.cs" />
     <Compile Include="ViewModels\FourmiViewModel.cs" />
     <Compile Include="ViewModels\MasterViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Compile Include="View\DetailView.xaml.cs">
-      <DependentUpon>DetailView.xaml</DependentUpon>
+    <Compile Include="View\UserControls\CombatanteView.xaml.cs">
+      <DependentUpon>CombatanteView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MasterView.xaml.cs">
-      <DependentUpon>MasterView.xaml</DependentUpon>
+    <Compile Include="View\UserControls\CueilleuseView.xaml.cs">
+      <DependentUpon>CueilleuseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailCombatanteView.xaml.cs">
+      <DependentUpon>DetailCombatanteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailCueilleuseView.xaml.cs">
+      <DependentUpon>DetailCueilleuseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailFourmiView.xaml.cs">
+      <DependentUpon>DetailFourmiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\FourmiView.xaml.cs">
+      <DependentUpon>FourmiView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -113,11 +129,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\DetailView.xaml">
+    <Page Include="View\UserControls\CombatanteView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MasterView.xaml">
+    <Page Include="View\UserControls\CueilleuseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailCombatanteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailCueilleuseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailFourmiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\FourmiView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

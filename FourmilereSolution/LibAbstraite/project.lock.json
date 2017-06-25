@@ -18471,10 +18471,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
+      "projectUniqueName": "C:\\Users\\Remi\\Source\\Repos\\Fourmiliere\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
       "projectName": "LibAbstraite",
-      "projectPath": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
-      "projectJsonPath": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\project.json",
+      "projectPath": "C:\\Users\\Remi\\Source\\Repos\\Fourmiliere\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
+      "projectJsonPath": "C:\\Users\\Remi\\Source\\Repos\\Fourmiliere\\FourmilereSolution\\LibAbstraite\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

@@ -1,10 +1,10 @@
-﻿<UserControl x:Class="FourmiliereWpf.View.DetailView"
+﻿<UserControl x:Class="FourmiliereWpf.View.UserControls.Details.DetailCueilleuseView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Height="Auto"
              Width="Auto">
     <Grid>
-        <Grid DataContext="{Binding SelectedFourmi}">
+        <Grid DataContext="{Binding SelectedCueilleuse}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -23,6 +23,9 @@
             <Label Grid.Column="0"
                    Grid.Row="0"
                    Content="Nom" />
+            <Label Grid.Column="0"
+                   Grid.Row="2"
+                   Content="Num" />
             <!--<Label Grid.Column="0"
                    Grid.Row="2"
                    Content="Is Female" />
@@ -37,6 +40,13 @@
                      Text="{Binding Path=Vie, Mode=TwoWay}"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top" />
+            <TextBox Grid.Column="1"
+                     Grid.Row="2"
+                     Width="25"
+                     Text="{Binding Path=Num, Mode=TwoWay}"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top" />
+
             <TextBox Grid.Column="1"
                      Grid.Row="0"
                      Width="100"

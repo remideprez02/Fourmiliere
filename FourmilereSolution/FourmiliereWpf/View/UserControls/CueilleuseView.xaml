@@ -1,27 +1,18 @@
-﻿<UserControl x:Class="FourmiliereWpf.View.MasterView"
+﻿<UserControl x:Class="FourmiliereWpf.View.CueilleuseView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:ViewModel="clr-namespace:FourmiliereWpf.ViewModels"
+             xmlns:viewModels="clr-namespace:FourmiliereWpf.ViewModels"
              Height="Auto"
              Width="Auto">
-    <!--<Page x:Class="FourmiliereWpf.View.MasterView"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:FourmiliereWpf.View"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="MasterView">-->
 
     <UserControl.Resources>
-        <DataTemplate DataType="{x:Type ViewModel:PersonViewModel}">
+        <DataTemplate DataType="{x:Type viewModels:CueilleuseViewModel}">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding FirstName}"
+                <TextBlock Text="{Binding Nom}"
                            Margin="0,0,5,0" />
-                <TextBlock Text="{Binding LastName}" />
+                <TextBlock Text="{Binding Vie}" />
             </StackPanel>
         </DataTemplate>
     </UserControl.Resources>
@@ -40,7 +31,7 @@
                 <TextBox.Style>
                     <Style>
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding SearchContainsNoMatch}"
+                            <DataTrigger Binding="{Binding SearchContainsNoMatchCueilleuse}"
                                          Value="True">
                                 <DataTrigger.Setters>
                                     <Setter Property="TextBox.Background"
@@ -56,19 +47,19 @@
         </DockPanel>
 
         <ListBox Grid.Row="1"
-                 ItemsSource="{Binding Persons}"
+                 ItemsSource="{Binding Cueilleuses}"
                  IsSynchronizedWithCurrentItem="True" />
 
         <UniformGrid Grid.Row="2"
                      Columns="4">
             <Button Content="Add"
-                    Command="{Binding AddCommand}" />
+                    Command="{Binding AddCommandCueilleuse}" />
             <Button Content="Remove"
-                    Command="{Binding RemoveCommand}" />
+                    Command="{Binding RemoveCommandCueilleuse}" />
             <Button Content="Previous"
-                    Command="{Binding PreviousCommand}" />
+                    Command="{Binding PreviousCommandCueilleuse}" />
             <Button Content="Next"
-                    Command="{Binding NextCommand}" />
+                    Command="{Binding NextCommandCueilleuse}" />
         </UniformGrid>
     </Grid>
 </UserControl>

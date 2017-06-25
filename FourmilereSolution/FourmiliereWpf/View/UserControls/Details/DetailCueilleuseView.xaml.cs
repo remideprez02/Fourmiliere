@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FourmiliereWpf.View
+namespace FourmiliereWpf.View.UserControls.Details
 {
     /// <summary>
-    /// Logique d'interaction pour MasterView.xaml
+    /// Logique d'interaction pour DetailCueilleuseView.xaml
     /// </summary>
-    public partial class MasterView : UserControl
+    public partial class DetailCueilleuseView : UserControl
     {
-        public MasterView()
+        public DetailCueilleuseView()
         {
             InitializeComponent();
         }

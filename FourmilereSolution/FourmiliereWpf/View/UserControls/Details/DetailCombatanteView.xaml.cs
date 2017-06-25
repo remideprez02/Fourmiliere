@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FourmiliereWpf.View
+namespace FourmiliereWpf.View.UserControls.Details
 {
     /// <summary>
-    /// Logique d'interaction pour DetailView.xaml
+    /// Logique d'interaction pour DetailCombatanteView.xaml
     /// </summary>
-    public partial class DetailView
+    public partial class DetailCombatanteView : UserControl
     {
-        public DetailView()
+        public DetailCombatanteView()
         {
             InitializeComponent();
         }

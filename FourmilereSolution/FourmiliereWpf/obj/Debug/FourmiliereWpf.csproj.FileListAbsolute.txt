@@ -1,0 +1,15 @@
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf.csprojResolveAssemblyReference.cache
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailCombatanteView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailCueilleuseView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailFourmiView.baml
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\MainWindow.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\CombatanteView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\CueilleuseView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailCombatanteView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailCueilleuseView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\Details\DetailFourmiView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\View\UserControls\FourmiView.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\App.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf_MarkupCompile.cache
+C:\Users\Remi\Source\Repos\Fourmiliere\FourmilereSolution\FourmiliereWpf\obj\Debug\FourmiliereWpf_MarkupCompile.lref
