@@ -14,3 +14,13 @@ C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\bin
 C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereConsole.csprojResolveAssemblyReference.cache
 C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.exe
 C:\Users\Remi\Documents\designpatterns\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.pdb
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe.config
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.exe
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\FourmilereSolution.pdb
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\LibAbstraite.dll
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\LibMetier.dll
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\LibAbstraite.pdb
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\bin\Debug\LibMetier.pdb
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereConsole.csprojResolveAssemblyReference.cache
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.exe
+C:\Users\DeprezRemi\Desktop\FourmilereSolution\FourmilereSolution\obj\Debug\FourmilereSolution.pdb

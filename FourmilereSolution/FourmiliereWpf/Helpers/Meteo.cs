@@ -25,7 +25,6 @@ namespace LibMetier.Helpers
             Pluie
         };
 
-
         //On fournit un délégué au constructeur qui appelle le constructeur
         private static readonly Lazy<Meteo> instance =
             new Lazy<Meteo>(() => new Meteo());

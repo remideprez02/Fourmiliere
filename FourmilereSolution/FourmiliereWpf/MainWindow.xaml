@@ -3,21 +3,114 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:View="clr-namespace:FourmiliereWpf.View"
+        xmlns:view="clr-namespace:FourmiliereWpf.View.UserControls"
+        xmlns:details="clr-namespace:FourmiliereWpf.View.UserControls.Details"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="350"
-        Width="525">
+        WindowState="Maximized"
+        ResizeMode="CanMinimize">
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition  Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.7*" />
             <ColumnDefinition Width="1.5*" />
         </Grid.ColumnDefinitions>
-        <View:MasterView x:Name="MasterView"
-                         Grid.Column="0" />
-        <View:DetailView x:Name="DetailView"
-                         Grid.Column="1"
-                         VerticalAlignment="Center">
-        </View:DetailView>
+        <TabControl x:Name="TabControlView"
+                    SelectionChanged="TabControlView_OnSelectionChanged"
+                    Grid.Column="0">
+            <TabItem x:Name="TabItemMenu"
+                     Height="auto"
+                     Width="auto"
+                     Header="Menu">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Row="0"
+                                Margin="10"
+                                Click="GenererSimu">Générer le plateau</Button>
+                        <Button x:Name="BtnLancerSimu"
+                                Grid.Row="1"
+                                Margin="10"
+                                IsEnabled="False"
+                                Click="LancerSimu">Lancer la simulation</Button>
+                        <Button Grid.Row="2"
+                                Click="Sauvegarder"
+                                Margin="10"
+                                x:Name="BtnSave"
+                                IsEnabled="false">Sauvegarder</Button>
+                        <Button Grid.Row="3"
+                                Click="APropos"
+                                Margin="10">A propos</Button>
+                        <Button Grid.Row="4"
+                                Click="Quitter"
+                                Margin="10">Quitter</Button>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItemFourmi"
+                     Height="auto"
+                     Width="auto"
+                     Header="Liste Fourmis">
+                <view:FourmiView x:Name="FourmiView"
+                                 Grid.Column="0" />
+            </TabItem>
+            <TabItem x:Name="TabItemCombatante"
+                     Height="auto"
+                     Width="auto"
+                     Header="Liste Combatantes">
+                <view:CombatanteView x:Name="CombatanteView"
+                                     Grid.Column="0" />
+            </TabItem>
+            <TabItem x:Name="TabItemCueilleuse"
+                     Height="auto"
+                     Width="auto"
+                     Header="Liste Cueilleuses">
+                <view:CueilleuseView x:Name="CueilleuseView"
+                                     Grid.Column="0" />
+            </TabItem>
+
+
+        </TabControl>
+        <details:DetailFourmiView x:Name="DetailFourmiView"
+                                  Grid.Column="0"
+                                  Grid.Row="1"
+                                  VerticalAlignment="Center">
+        </details:DetailFourmiView>
+        <details:DetailCombatanteView x:Name="DetailCombatanteView"
+                                      Grid.Column="0"
+                                      Grid.Row="1"
+                                      VerticalAlignment="Center">
+        </details:DetailCombatanteView>
+        <details:DetailCueilleuseView x:Name="DetailCueilleuseView"
+                                      Grid.Column="0"
+                                      Grid.Row="1"
+                                      VerticalAlignment="Center">
+        </details:DetailCueilleuseView>
+        <Grid Grid.Row="0"
+              Name="Plateau"
+              ShowGridLines="True"
+              Column="1"
+              Grid.RowSpan="2"
+              Background="AliceBlue"></Grid>
     </Grid>
 </Window>

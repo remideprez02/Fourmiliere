@@ -8,6 +8,7 @@ using LibAbstraite.GestionPersonnages;
 using LibAbstraite.Stratégie;
 using LibMetier.Helpers;
 using LibMetier.Observateurs;
+using FourmiliereWpf.ModelsAbstraits.Etat;
 
 namespace LibMetier.GestionPersonnages
 {
@@ -15,17 +16,26 @@ namespace LibMetier.GestionPersonnages
     {
         public sealed override string Nom { get; set; }
         public override ZoneAbstraite Position { get; set; }
+        public override ZoneAbstraite BasePosition { get; set; }
+        public override EtatAbstrait Etat { get; set; }
+
         Random hasard = new Random();
+        public ObservateurCueilleuse Observateur { get; set; }
+        public Queue<ZoneAbstraite> ZonesPrecedentes = new Queue<ZoneAbstraite>();
+        public ZoneAbstraite ZoneSuivante { get; set; }
 
         private int _vie { get; set; }
         public int Num { get; set; }
 
-        public Cueilleuse(string nom, int numero, int vie, StrategieAbstraite strat)
+        public Cueilleuse(string nom, int numero, int vie, StrategieAbstraite strat, ObservateurCueilleuse obs, ZoneAbstraite ZoneActuellle, EtatAbstrait etat) : base(nom, ZoneActuellle, etat)
         {
             Nom = nom;
-            this.Num = numero;
-            this._vie = vie;
-            this._strategie = strat;
+            Num = numero;
+            _vie = vie;
+            _strategie = strat;
+            Observateur = obs;
+            Attach(obs);
+            Etat = etat;
         }
 
         private readonly List<IObservateur> _observateurCueilleuses = new List<IObservateur>();
@@ -57,17 +67,6 @@ namespace LibMetier.GestionPersonnages
                 Notify();
             }
         }
-        public override ZoneAbstraite ChoixZoneSuivante(List<AccesAbstrait> accesList)
-        {
-            //On récupère un accès aléatoire,
-            var acces = accesList.ElementAt(hasard.GetRandomPosition(accesList.Count));
-
-            //On ajoute cet accès à notre zone
-            this.Position.AccesList.Add(acces);
-
-            //On renvoie notre position
-            return Position;
-        }
 
         private StrategieAbstraite _strategie;
 
@@ -89,7 +88,7 @@ namespace LibMetier.GestionPersonnages
 
         public void AnalyseSituation()
         {
-            System.Diagnostics.Debug.WriteLine("[" + this.Nom + " " + this.Num + "]" + " Vie: " + this.Vie + " Position: " + this.Position.Nom + " Strategie: " + this.Strategie);
+            System.Diagnostics.Debug.WriteLine("[" + this.Nom + " " + this.Num + "]" + " Vie: " + this.Vie + " ZoneActuellle: " + this.Position.Nom + " Strategie: " + this.Strategie);
         }
     }
 }

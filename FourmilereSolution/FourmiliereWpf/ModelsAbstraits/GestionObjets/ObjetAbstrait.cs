@@ -11,9 +11,18 @@ namespace LibAbstraite.GestionObjets
     {
         public abstract string Nom { get; set; }
         public abstract ZoneAbstraite Position { get; set; }
+        public abstract double Vie { get; set; }
+        public abstract double VieMax { get; set; }
+        public abstract bool IsTake { get; set; }
         protected ObjetAbstrait()
         {
-
+            VieMax = 30;
+            Vie = 30;
+            IsTake = false;
+        }
+        public virtual void MaJ()
+        {
+            Vie--;
         }
     }
 }

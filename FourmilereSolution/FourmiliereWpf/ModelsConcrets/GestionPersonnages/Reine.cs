@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FourmiliereWpf.ModelsAbstraits.Etat;
 using LibAbstraite.GestionEnvironnement;
 using LibAbstraite.GestionPersonnages;
 using LibAbstraite.Stratégie;
@@ -15,18 +16,23 @@ namespace LibMetier.GestionPersonnages
     {
         public sealed override string Nom { get; set; }
         public override ZoneAbstraite Position { get; set; }
+        public override ZoneAbstraite BasePosition { get; set; }
+        public override EtatAbstrait Etat { get; set; }
+
         Random hasard = new Random();
         private int _vie { get; set; }
         private int _oeuf { get; set; }
 
         private readonly List<IObservateur> _observateurCueilleuses = new List<IObservateur>();
 
-        public Reine(int vie, StrategieAbstraite strat)
+        public Reine(int vie, ZoneAbstraite position, StrategieAbstraite strat, EtatAbstrait etat) : base("reine", position, etat)
         {
             Nom = "reine";
-            this._vie = vie;
-            this._strategie = strat;
+            _vie = vie;
+            _strategie = strat;
             Oeuf = 1;
+            Etat = etat;
+            Position = position;
         }
 
         public void Attach(IObservateur observateur)
@@ -65,18 +71,6 @@ namespace LibMetier.GestionPersonnages
                 _oeuf = value;
                 Notify();
             }
-        }
-
-        public override ZoneAbstraite ChoixZoneSuivante(List<AccesAbstrait> accesList)
-        {
-            //On récupère un accès aléatoire,
-            var acces = accesList.ElementAt(hasard.GetRandomPosition(accesList.Count));
-
-            //On ajoute cet accès à notre zone
-            this.Position.AccesList.Add(acces);
-
-            //On renvoie notre position
-            return Position;
         }
 
         private StrategieAbstraite _strategie;

@@ -16,6 +16,9 @@ namespace LibMetier.GestionEnvironnement
         {
             this.debut = debut;
             this.fin = fin;
+
+            debut.AjouteAcces(this);
+            fin.AjouteAcces(this);
         }
 
     }

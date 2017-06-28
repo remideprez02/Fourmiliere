@@ -10,19 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FourmiliereWpf.ViewModels;
 
 namespace FourmiliereWpf.View
 {
     /// <summary>
-    /// Logique d'interaction pour DetailView.xaml
+    /// Logique d'interaction pour AProposView.xaml
     /// </summary>
-    public partial class DetailView
+    public partial class AProposView : Window
     {
-        public DetailView()
+        public AProposView()
         {
             InitializeComponent();
+            this.DataContext = new AProposViewModel();
         }
     }
 }

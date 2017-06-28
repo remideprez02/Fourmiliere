@@ -18467,14 +18467,14 @@
     ".NETPlatform,Version=v5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Remi\\.nuget\\packages\\": {}
+    "C:\\Users\\DeprezRemi\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
+      "projectUniqueName": "C:\\Users\\DeprezRemi\\Desktop\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
       "projectName": "LibAbstraite",
-      "projectPath": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
-      "projectJsonPath": "C:\\Users\\Remi\\Documents\\designpatterns\\FourmilereSolution\\LibAbstraite\\project.json",
+      "projectPath": "C:\\Users\\DeprezRemi\\Desktop\\FourmilereSolution\\LibAbstraite\\LibAbstraite.csproj",
+      "projectJsonPath": "C:\\Users\\DeprezRemi\\Desktop\\FourmilereSolution\\LibAbstraite\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

@@ -10,6 +10,7 @@ using LibMetier.GestionEnvironnement;
 using LibMetier.GestionObjets;
 using LibMetier.GestionPersonnages;
 using LibMetier.Stratégies;
+using FourmiliereWpf.ModelsConcrets.Etat;
 
 namespace LibMetier
 {
@@ -38,7 +39,7 @@ namespace LibMetier
 
         public override EnvironnementAbstrait CreerEnvironnement()
         {
-             return new Fourmiliere();
+             return new Fourmiliere(this);
         }
 
         public override ObjetAbstrait CreerObjet(string nom)
@@ -55,36 +56,35 @@ namespace LibMetier
                     return new Nourriture();
             }
         }
-
-        public override PersonnageAbstrait CreerPersonnage(string nom)
+        public override PersonnageAbstrait CreerPersonnage(string nom, ZoneAbstraite position)
         {
             if (nom == "reine")
             {
                 //Vérifie que la reine a été créée qu'une fois
                 if (Flag) throw new Exception("La reine a déjà été créée");
                 this.Flag = true;
-                return new Reine(ReinePtsVie, new StrategiePondre());
+                return new Reine(ReinePtsVie, position, new StrategiePondre(), new EtatBase());
             }
             switch (nom.ToLower())
             {
                 case "combatante":
                     CompteurCombatante++;
-                    return new Combatante("combatante", CompteurCombatante, CombatantePtsVie, new StrategieDefendreColonie());
+                    return new Combatante("combatante", CompteurCombatante, CombatantePtsVie, new StrategieDefendreColonie(), new Observateurs.ObservateurCombatante(), position, new EtatBase());
                 case "cueilleuse":
                     CompteurCueilleuse++;
-                    return new Cueilleuse("cueilleuse", CompteurCueilleuse, CueilleusePtsVie, new StrategieChercherNourriture());
+                    return new Cueilleuse("cueilleuse", CompteurCueilleuse, CueilleusePtsVie, new StrategieChercherNourriture(), new Observateurs.ObservateurCueilleuse(), position, new EtatBase());
                 case "fourmi":
                     CompteurFourmi++;
-                    return new Fourmi("fourmi", CompteurFourmi, FourmiPtsVie, new StrategieExplorer());
+                    return new Fourmi("fourmi", CompteurFourmi, FourmiPtsVie, new StrategieExplorer(), new Observateurs.ObservateurFourmi(), position, new EtatBase());
                 default:
                     CompteurFourmi++;
-                    return new Fourmi("fourmi", CompteurFourmi, FourmiPtsVie, new StrategieExplorer());
+                    return new Fourmi("fourmi", CompteurFourmi, FourmiPtsVie, new StrategieExplorer(), new Observateurs.ObservateurFourmi(), position, new EtatBase());
             }
         }
 
-        public override ZoneAbstraite CreerZone(string nom)
+        public override ZoneAbstraite CreerZone(string nom, int x, int y)
         {
-            return new BoutDeTerrain(nom);
+            return new BoutDeTerrain(nom, x, y);
         }
     }
 }

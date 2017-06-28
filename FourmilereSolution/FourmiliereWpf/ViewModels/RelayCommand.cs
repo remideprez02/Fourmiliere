@@ -29,7 +29,7 @@ namespace FourmiliereWpf.ViewModels
         }
 
         /// <summary>
-        /// Initialise une nuvelle instance de RelayCommand class
+        /// Initialise une nouvelle instance de RelayCommand class
         /// </summary>
         /// <param name="execute">Execution de la logique</param>
         public RelayCommand(Action execute)
@@ -38,7 +38,7 @@ namespace FourmiliereWpf.ViewModels
         }
 
         /// <summary>
-        /// Initialise une nuvelle instance de RelayCommand class
+        /// Initialise une nouvelle instance de RelayCommand class
         /// </summary>
         /// <param name="execute">Execution de la logique</param>
         /// <param name="canExecute">Statut de l'execution de la logique</param>

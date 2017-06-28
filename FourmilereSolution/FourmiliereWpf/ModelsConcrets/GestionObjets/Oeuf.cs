@@ -10,7 +10,14 @@ namespace LibMetier.GestionObjets
 {
     public class Oeuf : ObjetAbstrait
     {
+        public Oeuf()
+        {
+
+        }
+        public override bool IsTake { get; set; }
         public override string Nom { get; set; }
         public override ZoneAbstraite Position { get; set; }
+        public override double Vie { get; set; }
+        public override double VieMax { get; set; }
     }
 }

@@ -11,6 +11,8 @@ namespace LibAbstraite.GestionEnvironnement
     public abstract class ZoneAbstraite
     {
         public abstract string Nom { get; set; }
+        public abstract int X { get; set; }
+        public abstract int Y { get; set; }
         public abstract List<ObjetAbstrait> ObjectsList { get; set; }
         public abstract List<PersonnageAbstrait> PersonnagesList { get; set; }
         public abstract List<AccesAbstrait> AccesList { get; set; }
@@ -19,9 +21,11 @@ namespace LibAbstraite.GestionEnvironnement
         public abstract void AjouteObjet(ObjetAbstrait obj);
         public abstract void AjoutePersonnage(PersonnageAbstrait perso);
         public abstract void RetirePersonnage(PersonnageAbstrait perso);
-        protected ZoneAbstraite(string nom)
+        protected ZoneAbstraite(string nom, int x, int y)
         {
             this.Nom = nom;
+            this.X = x;
+            this.Y = y;
         }
     }
 }

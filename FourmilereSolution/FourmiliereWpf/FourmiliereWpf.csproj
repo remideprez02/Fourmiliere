@@ -13,6 +13,22 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\DeprezRemi\Desktop\Fourmiliere\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,9 +49,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>364514DB3BBFFB830A357784FA36DF377B053769</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FourmiliereWpf_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,8 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\Configuration.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Helpers\Meteo.cs" />
+    <Compile Include="ModelsAbstraits\Etat\EtatAbstrait.cs" />
     <Compile Include="ModelsAbstraits\Fabriques\FabriqueAbstraite.cs" />
     <Compile Include="ModelsAbstraits\GestionEnvironnement\AccesAbstrait.cs" />
     <Compile Include="ModelsAbstraits\GestionEnvironnement\EnvironnementAbstrait.cs" />
@@ -65,6 +97,9 @@
     <Compile Include="ModelsAbstraits\GestionPersonnages\PersonnageAbstrait.cs" />
     <Compile Include="ModelsAbstraits\Observateur\ObservateurAbstrait.cs" />
     <Compile Include="ModelsAbstraits\Stratégie\StrategieAbstraite.cs" />
+    <Compile Include="ModelsConcrets\Etat\EtatBase.cs" />
+    <Compile Include="ModelsConcrets\Etat\EtatObjet.cs" />
+    <Compile Include="ModelsConcrets\Etat\EtatOeuf.cs" />
     <Compile Include="ModelsConcrets\Fabriques\FabriqueFourmiliere.cs" />
     <Compile Include="ModelsConcrets\GestionEnvironnement\BoutDeTerrain.cs" />
     <Compile Include="ModelsConcrets\GestionEnvironnement\Chemin.cs" />
@@ -90,16 +125,39 @@
     <Compile Include="ModelsConcrets\Stratégie\StrategieRentrerColonie.cs" />
     <Compile Include="ModelsConcrets\Stratégie\StrategieSortirColonie.cs" />
     <Compile Include="ViewModels\AProposViewModel.cs" />
+    <Compile Include="ViewModels\CombatanteViewModel.cs" />
+    <Compile Include="ViewModels\CueilleuseViewModel.cs" />
     <Compile Include="ViewModels\FourmiliereViewModel.cs" />
     <Compile Include="ViewModels\FourmiViewModel.cs" />
     <Compile Include="ViewModels\MasterViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Compile Include="View\DetailView.xaml.cs">
-      <DependentUpon>DetailView.xaml</DependentUpon>
+    <Compile Include="View\AProposView.xaml.cs">
+      <DependentUpon>AProposView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MasterView.xaml.cs">
-      <DependentUpon>MasterView.xaml</DependentUpon>
+    <Compile Include="View\GenereTerrainView.xaml.cs">
+      <DependentUpon>GenereTerrainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaveView.xaml.cs">
+      <DependentUpon>SaveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\CombatanteView.xaml.cs">
+      <DependentUpon>CombatanteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\CueilleuseView.xaml.cs">
+      <DependentUpon>CueilleuseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailCombatanteView.xaml.cs">
+      <DependentUpon>DetailCombatanteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailCueilleuseView.xaml.cs">
+      <DependentUpon>DetailCueilleuseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Details\DetailFourmiView.xaml.cs">
+      <DependentUpon>DetailFourmiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\FourmiView.xaml.cs">
+      <DependentUpon>FourmiView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -113,11 +171,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\DetailView.xaml">
+    <Page Include="View\AProposView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MasterView.xaml">
+    <Page Include="View\GenereTerrainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SaveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\CombatanteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\CueilleuseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailCombatanteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailCueilleuseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\Details\DetailFourmiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\FourmiView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +226,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="FourmiliereWpf_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +236,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Ressources\ant.png" />
+    <Resource Include="Ressources\anthill.png" />
+    <Resource Include="Ressources\ant_next.png" />
+    <Resource Include="Ressources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\oeuf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\pheromone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\ant_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\ant_oeuf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

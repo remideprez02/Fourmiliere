@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FourmiliereWpf.App" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAACAEAACAAAAAAAAAAAAREAAgAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.Helpers.Configuration" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAggAAAAAAAAAAAAAAgCAAAAQAAAAEAQAAAAAA=</HashCode>
+      <FileName>Helpers\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Helpers.Extensions" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Helpers.Meteo" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Meteo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ModelsAbstraits.Etat.EtatAbstrait">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\Etat\EtatAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.FabriqueAbstraite">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAIABQAAAAAAIAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\Fabriques\FabriqueAbstraite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionEnvironnement.AccesAbstrait" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionEnvironnement\AccesAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionEnvironnement.EnvironnementAbstrait" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAAAAAIAAAEIAAAAAFgAAoAgACAAIAUIAAAAAgAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionEnvironnement\EnvironnementAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionEnvironnement.MeteoAbstraite" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionEnvironnement\MeteoAbstraite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionEnvironnement.ZoneAbstraite" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAAAAAAAAAEAAAAAAEAAAiCgAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionEnvironnement\ZoneAbstraite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionObjets.ObjetAbstrait" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAgAIAAAAAAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionObjets\ObjetAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.GestionPersonnages.PersonnageAbstrait" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAABAAAAAgAIAAEAAAACAAQAAAABIAgAAAgAA=</HashCode>
+      <FileName>ModelsAbstraits\GestionPersonnages\PersonnageAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.Observateurs.ObservateurAbstrait" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\Observateur\ObservateurAbstrait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibAbstraite.Stratégie.StrategieAbstraite">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsAbstraits\Stratégie\StrategieAbstraite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ModelsConcrets.Etat.EtatBase">
+    <Position X="11.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAEBIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Etat\EtatBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ModelsConcrets.Etat.EtatObjet">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAABIAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Etat\EtatObjet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.FabriqueFourmiliere">
+    <Position X="8.75" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQEACAgAAAAAAAAAAIABQACAAAAIAAACEIAAAIAAACA=</HashCode>
+      <FileName>ModelsConcrets\Fabriques\FabriqueFourmiliere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionEnvironnement.BoutDeTerrain" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAAAAAAAAAEAAAAAAEAAAiCgAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>ModelsConcrets\GestionEnvironnement\BoutDeTerrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionEnvironnement.Chemin" Collapsed="true">
+    <Position X="3.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\GestionEnvironnement\Chemin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionEnvironnement.Fourmiliere" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iIAAABAAAIAUAAAAAAAAEgKAoAAECgAAAUIAAAAAAAE=</HashCode>
+      <FileName>ModelsConcrets\GestionEnvironnement\Fourmiliere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionObjets.Nourriture" Collapsed="true">
+    <Position X="0.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAIAAAAAAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\GestionObjets\Nourriture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionObjets.Oeuf" Collapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAIAAAAAAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\GestionObjets\Oeuf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionObjets.Pheromone" Collapsed="true">
+    <Position X="5.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAIAAAAAAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\GestionObjets\Pheromone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionPersonnages.Combatante" Collapsed="true">
+    <Position X="0.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEBAAAAYkBIAAAAAAAKAAQABCQDAAAAABgAA=</HashCode>
+      <FileName>ModelsConcrets\GestionPersonnages\Combatante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionPersonnages.Cueilleuse" Collapsed="true">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEBAQAAYkBIAAAAAAAKAAQABAQDAAAAABgAA=</HashCode>
+      <FileName>ModelsConcrets\GestionPersonnages\Cueilleuse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionPersonnages.Fourmi" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAEBAAAAYkBIAAAAAAAKAAQABAQDAAAAABgAA=</HashCode>
+      <FileName>ModelsConcrets\GestionPersonnages\Fourmi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.GestionPersonnages.Reine" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQAAYkBIAAAAAAAKAAQABAADAIAAAJkAA=</HashCode>
+      <FileName>ModelsConcrets\GestionPersonnages\Reine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Observateurs.ObservateurCombatante" BaseTypeListCollapsed="true">
+    <Position X="15" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Observateur\ObservateurCombatante.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LibMetier.Observateurs.ObservateurCueilleuse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAAAACAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Observateur\ObservateurCueilleuse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LibMetier.Observateurs.ObservateurFourmi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAAAACAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Observateur\ObservateurFourmi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LibMetier.Observateurs.ObservateurReine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAEAAAIAAA=</HashCode>
+      <FileName>ModelsConcrets\Observateur\ObservateurReine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieArreterPondre">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieArreterPondre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieChercherNourriture">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieChercherNourriture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieDefendreColonie">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieDefendreColonie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieExplorer">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieExplorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategiePondre">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategiePondre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieRentrerColonie">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieRentrerColonie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibMetier.Stratégies.StrategieSortirColonie">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Stratégie\StrategieSortirColonie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.Properties.Resources" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.Properties.Settings" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.View.AProposView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AProposView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.GenereTerrainView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAACAABAAAAAAAAAAAAAAAAAGAAAAA=</HashCode>
+      <FileName>View\GenereTerrainView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.CombatanteView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\CombatanteView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.CueilleuseView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\CueilleuseView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.FourmiView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\FourmiView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.Details.DetailCombatanteView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\Details\DetailCombatanteView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.Details.DetailCueilleuseView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\Details\DetailCueilleuseView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.View.UserControls.Details.DetailFourmiView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserControls\Details\DetailFourmiView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.AProposViewModel" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AProposViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.CombatanteViewModel" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAIIAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CombatanteViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.CueilleuseViewModel" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAIAAAAAAAAAIAAAAAAACAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CueilleuseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.FourmiliereViewModel" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAwAAAAAAAAAAAAAEAAAAIAAAAA=</HashCode>
+      <FileName>ViewModels\FourmiliereViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.FourmiViewModel" Collapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAgAAAAAAIAAAAAAACAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModels\FourmiViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.MasterViewModel" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAkAIwIYAFAkJABQIKgYQUAwJwAKEEh4RAw0KDgOQE=</HashCode>
+      <FileName>ViewModels\MasterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FourmiliereWpf.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAQAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="LibMetier.GestionPersonnages.StrategieAbstraiteIStrategie" Collapsed="true">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\GestionPersonnages\IStrategie.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LibMetier.Observateurs.IObservateur">
+    <Position X="17.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsConcrets\Observateur\IObservateur.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -9,40 +9,50 @@ using LibAbstraite.GestionPersonnages;
 using LibAbstraite.Stratégie;
 using LibMetier.Helpers;
 using LibMetier.Observateurs;
+using LibMetier.Stratégies;
+using FourmiliereWpf.ModelsAbstraits.Etat;
 
 namespace LibMetier.GestionPersonnages
 {
     public class Combatante : PersonnageAbstrait
     {
         public sealed override string Nom { get; set; }
-        public override ZoneAbstraite Position { get; set; }
+        public override ZoneAbstraite Position  { get; set; }
+        public override ZoneAbstraite BasePosition { get; set; }
+        public override EtatAbstrait Etat { get; set; }
+        public ObservateurCombatante Observateur { get; set; }
         Random hasard = new Random();
         private int _vie { get; set; }
         public int Num { get; set; }
+        protected Queue<ZoneAbstraite> ZoneUseless = new Queue<ZoneAbstraite>();
+        protected ZoneAbstraite ZoneSuivante = null;
+        public ZoneAbstraite ZoneTemporaire { get; set; }
+        private readonly List<IObservateur> _observateurCombatantes = new List<IObservateur>();
 
-        private readonly List<IObservateur> _observateurCueilleuses = new List<IObservateur>();
-
-        public Combatante(string nom, int numero, int vie, StrategieAbstraite strat)
+        public Combatante(string nom, int numero, int vie, StrategieAbstraite strat, ObservateurCombatante obs, ZoneAbstraite position, EtatAbstrait etat) : base(nom, position, etat)
         {
             Nom = nom;
-            this.Num = numero;
-            this._vie = vie;
-            this._strategie = strat;
+            Num = numero;
+            _vie = vie;
+            _strategie = strat;
+            Observateur = obs;
+            Attach(obs);
+            Etat = etat;
         }
 
         public void Attach(IObservateur observateur)
         {
-            _observateurCueilleuses.Add(observateur);
+            _observateurCombatantes.Add(observateur);
         }
 
         public void Detach(IObservateur observateur)
         {
-            _observateurCueilleuses.Remove(observateur);
+            _observateurCombatantes.Remove(observateur);
         }
 
         public void Notify()
         {
-            foreach (IObservateur observateur in _observateurCueilleuses)
+            foreach (IObservateur observateur in _observateurCombatantes)
             {
                 observateur.Actualise(this);
             }
@@ -57,18 +67,7 @@ namespace LibMetier.GestionPersonnages
                 Notify();
             }
         }
-        public override ZoneAbstraite ChoixZoneSuivante(List<AccesAbstrait> accesList)
-        {
-            //On récupère un accès aléatoire,
-            var acces = accesList.ElementAt(hasard.GetRandomPosition(accesList.Count));
-
-            //On ajoute cet accès à notre zone
-            this.Position.AccesList.Add(acces);
-
-            //On renvoie notre position
-            return Position;
-        }
-
+      
         private StrategieAbstraite _strategie;
 
         public StrategieAbstraite Strategie

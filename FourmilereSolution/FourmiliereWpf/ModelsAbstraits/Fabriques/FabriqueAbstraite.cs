@@ -12,9 +12,9 @@ namespace LibAbstraite
     {
         public abstract string Titre { get; }
         public abstract EnvironnementAbstrait CreerEnvironnement();
-        public abstract ZoneAbstraite CreerZone(string nom);
+        public abstract ZoneAbstraite CreerZone(string nom, int x, int y);
         public abstract AccesAbstrait CreerAcces(ZoneAbstraite zdebut, ZoneAbstraite zfin);
-        public abstract PersonnageAbstrait CreerPersonnage(string nom);
+        public abstract PersonnageAbstrait CreerPersonnage(string nom, ZoneAbstraite position);
         public abstract ObjetAbstrait CreerObjet(string nom);
 
     }
